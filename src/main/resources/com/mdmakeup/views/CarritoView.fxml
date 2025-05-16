@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/24" xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="com.mdmakeup.controllers.CarritoController" spacing="10" padding="20">
+    
+    <Label text="Carrito de Compras" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    
+    <TableView fx:id="tablaProductos">
+        <columns>
+            <TableColumn fx:id="columnaNombre" text="Producto" prefWidth="150"/>
+            <TableColumn fx:id="columnaPrecio" text="Precio" prefWidth="100"/>
+            <TableColumn fx:id="columnaCantidad" text="Cantidad" prefWidth="80"/>
+            <TableColumn fx:id="columnaAcciones" text="Acciones" prefWidth="100"/>
+        </columns>
+    </TableView>
+    
+    <HBox spacing="20" alignment="CENTER_RIGHT">
+        <VBox spacing="5" alignment="TOP_RIGHT">
+            <Label text="Subtotal:"/>
+            <Label text="Envío:"/>
+            <Label text="Total:" style="-fx-font-weight: bold;"/>
+        </VBox>
+        <VBox spacing="5" alignment="TOP_LEFT">
+            <Label fx:id="lblSubtotal" text="$0"/>
+            <Label fx:id="lblEnvio" text="$0"/>
+            <Label fx:id="lblTotal" text="$0" style="-fx-font-weight: bold;"/>
+        </VBox>
+    </HBox>
+    
+    <HBox spacing="20" alignment="CENTER">
+        <Button text="Volver a Tienda" onAction="#volverATienda" style="-fx-background-color: #6c757d; -fx-text-fill: white;"/>
+        <Button text="Proceder al Pago" onAction="#procederAlPago" style="-fx-background-color: #d63384; -fx-text-fill: white;"/>
+    </HBox>
+</VBox>
