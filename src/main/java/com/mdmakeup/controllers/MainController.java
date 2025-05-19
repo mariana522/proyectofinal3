@@ -29,17 +29,31 @@ public class MainController {
     }
 
     private void cargarProductosEjemplo() {
-        Producto p1 = new Producto("1", "Base de Maquillaje", 50000, "base.jpg", "Bases");
-        Producto p2 = new Producto("2", "Labial Rojo", 25000, "labial.jpg", "Labiales");
-        Producto p3 = new Producto("3", "Paleta de Sombras", 80000, "sombras.jpg", "Sombras");
-        Producto p4 = new Producto("4", "Máscara de Pestañas", 30000, "mascara.jpg", "Máscaras");
-        Producto p5 = new Producto("5", "Rubor en Polvo", 35000, "rubor.jpg", "Rubores");
+         Producto p6 = new Producto("6", "Blush palette", 32000, "image 2.jpg", "Blush");
+        Producto p7 = new Producto("7", "Foundation", 42000, "image 3.jpg", "Bases");
+        Producto p8 = new Producto("8", "Brushes", 50000, "image 4.jpg", "Brochas");
+        Producto p9 = new Producto("9", "Lip gloss", 22000, "image 5.jpg", "Labiales");
+        Producto p10 = new Producto("10", "Beauty blender", 6000, "image 6.jpg", "Esponjas");
+        Producto p11 = new Producto("11", "Loose powder", 35000, "image 7.jpg", "Polvos");
+        Producto p12 = new Producto("12", "Eyeshadow palette", 80000, "image 8.jpg", "Sombras");
+        Producto p13 = new Producto("13", "Concealer", 23000, "image 9.jpg", "Correctores");
+        Producto p14 = new Producto("14", "Highligter", 24000, "image 10.jpg", "Iluminadores");
+        Producto p15 = new Producto("15", "blush", 19000, "image 11.jpg", "Rubores");
+        Producto p16 = new Producto("16", "Lip gloss", 21000, "image 14.jpg", "Labiales");
+        Producto p17 = new Producto("17", "Borla", 8000, "image 12.jpg", "Esponjas");
 
-        productosDisponibles.agregarProducto(p1);
-        productosDisponibles.agregarProducto(p2);
-        productosDisponibles.agregarProducto(p3);
-        productosDisponibles.agregarProducto(p4);
-        productosDisponibles.agregarProducto(p5);
+        productosDisponibles.agregarProducto(p6);
+        productosDisponibles.agregarProducto(p7);
+        productosDisponibles.agregarProducto(p8);
+        productosDisponibles.agregarProducto(p9);
+        productosDisponibles.agregarProducto(p10);
+        productosDisponibles.agregarProducto(p11);
+        productosDisponibles.agregarProducto(p12);
+        productosDisponibles.agregarProducto(p13);
+        productosDisponibles.agregarProducto(p14);
+        productosDisponibles.agregarProducto(p15);
+        productosDisponibles.agregarProducto(p16);
+        productosDisponibles.agregarProducto(p17);
     }
 
     
